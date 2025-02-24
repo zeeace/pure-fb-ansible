@@ -1,2 +1,2 @@
 # pure-fb-ansible
-Pure Storage FlashBlade Ansible playbooks
+Ansible playbooks for Pure Storage FlashBlade
