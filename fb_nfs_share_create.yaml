@@ -1,0 +1,21 @@
+- name: Pure Storage FlashBlade Ansible module Demo
+  hosts: localhost 
+  collections:
+    - purestorage.flashblade
+ 
+  gather_facts: false
+ 
+  tasks:
+ 
+  - name: Create new FlashBlade FileSystem
+    purefb_fs:
+        fb_url: "10.245.100.140"
+        api_token: "T-9c269aa5-8446-41f5-9209-ab4649135ec4"
+        name: "bcm-fb-nfs-mount-1"
+        state: present
+        size: 500G
+        nfsv3: True
+        nfsv4: False
+        hard_limit: true
+        nfs_rules: '*(rw,no_root_squash)'
+        snapshot: True
