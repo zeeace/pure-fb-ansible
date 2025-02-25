@@ -9,8 +9,8 @@
  
   - name: Create new FlashBlade FileSystem
     purefb_fs:
-        fb_url: "10.245.100.140"
-        api_token: "T-9c269aa5-8446-41f5-9209-ab4649135ec4"
+        fb_url: "192.168.1.11"
+        api_token: "T-XxXXXxxX-XXXX-XXxX-XXXX-xxXXXXXXXxxX"
         name: "bcm-fb-nfs-mount-1"
         state: present
         size: 500G
